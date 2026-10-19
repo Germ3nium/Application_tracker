@@ -84,7 +84,7 @@ def _within_2_weeks_date(date_str: str) -> bool:
 
 
 async def fetch_adzuna(keyword: str, page: int = 1) -> list[dict]:
-    if not ADZUNA_APP_ID or ADZUNA_APP_ID == "your_app_id_here":
+    if not ADZUNA_APP_ID or ADZUNA_APP_ID == "your_app_id_here": #Need to add Adzuna app_ID
         return []
     url = (
         f"https://api.adzuna.com/v1/api/jobs/za/search/{page}"
